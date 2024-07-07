@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CycleTrack - Cyclist Tracker App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="screen welcome-screen">
+        <img src="scenic_biking_route.jpg" alt="Scenic Biking Route" class="background-image">
+        <div class="logo">
+            <i class="material-icons">directions_bike</i>
+            <h1>CycleTrack</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn login-btn">Login</button>
+            <button class="btn signup-btn">Sign Up</button>
+        </div>
+        <div class="footer">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Home Screen -->
+    <div class="screen home-screen">
+        <div class="header">
+            <i class="material-icons">menu</i>
+            <img src="cyclist_avatar.png" alt="Cyclist Avatar" class="avatar-icon">
+        </div>
+        <div class="current-ride-status">
+            <h2>Current Ride Status</h2>
+            <p><strong>Speed:</strong> 25 km/h</p>
+            <p><strong>Distance:</strong> 5 km</p>
+            <p><strong>Time Elapsed:</strong> 00:20:00</p>
+        </div>
+        <div class="map-view">
+            <img src="map_view.jpg" alt="Map View">
+        </div>
+        <div class="bottom-navigation">
+            <i class="material-icons">home</i>
+            <i class="material-icons">history</i>
+            <i class="material-icons">emoji_events</i>
+            <i class="material-icons">settings</i>
+        </div>
+    </div>
+
+    <!-- Ride Summary Screen -->
+    <div class="screen ride-summary-screen">
+        <h2>Ride Summary</h2>
+        <div class="overview">
+            <img src="map_snapshot.jpg" alt="Map Snapshot" class="map-snapshot">
+            <div class="stats">
+                <p>Total Distance: 10 km</p>
+                <p>Avg Speed: 25 km/h</p>
+                <p>Calories Burned: 600 kcal</p>
+                <p>Ride Duration: 00:40:00</p>
+            </div>
+        </div>
+        <div class="graph">
+            <img src="line_graph.jpg" alt="Line Graph">
+        </div>
+        <div class="notes">
+            <textarea placeholder="Add notes about your ride"></textarea>
+        </div>
+        <button class="btn save-btn">Save to History</button>
+    </div>
+
+    <!-- History Screen -->
+    <div class="screen history-screen">
+        <h2>Ride History</h2>
+        <input type="text" placeholder="Search by date, route, or ride name" class="search-bar">
+        <div class="ride-list">
+            <!-- Populate with ride cards dynamically if needed -->
+            <div class="ride-card">Ride 1</div>
+            <div class="ride-card">Ride 2</div>
+            <div class="ride-card">Ride 3</div>
+            <!-- Add more ride cards as needed -->
+        </div>
+    </div>
+
+    <!-- Achievements Screen -->
+    <div class="screen achievements-screen">
+        <h2>Achievements</h2>
+        <div class="achievement-grid">
+            <!-- Populate with badges dynamically if needed -->
+            <div class="achievement-badge">
+                <img src="badge.png" alt="Badge">
+                <p>Achievement 1</p>
+            </div>
+            <div class="achievement-badge">
+                <img src="badge.png" alt="Badge">
+                <p>Achievement 2</p>
+            </div>
+            <!-- Add more achievement badges as needed -->
+        </div>
+    </div>
+
+    <!-- Settings Screen -->
+    <div class="screen settings-screen">
+        <h2>Settings</h2>
+        <div class="settings-section">
+            <h3>Profile Settings</h3>
+            <p>Edit profile picture, name, and bio</p>
+        </div>
+        <div class="settings-section">
+            <h3>App Settings</h3>
+            <p>Options for units (miles/km), notifications, and theme</p>
+        </div>
+        <div class="settings-section">
+            <h3>Connected Devices</h3>
+            <p>Manage connections to cycling computers, smartwatches, etc.</p>
+        </div>
+        <div class="settings-section">
+            <h3>Account Settings</h3>
+            <p>Change password, manage subscriptions</p>
+        </div>
+        <button class="btn logout-btn">Logout</button>
+    </div>
+</body>
+</html>
