@@ -6,7 +6,6 @@ body {
 }
 
 .screen {
-    display: none;
     padding: 20px;
 }
 
@@ -47,7 +46,11 @@ body {
     margin: 10px 0;
     border: none;
     cursor: pointer;
-    span
+    transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: darkcyan;
 }
 
 .footer {
@@ -99,87 +102,5 @@ body {
 .bottom-navigation i.material-icons {
     font-size: 30px;
     color: teal;
-}
-
-.ride-summary-screen .overview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ride-summary-screen .stats {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.ride-summary-screen .notes textarea {
-    width: 100%;
-    height: 100px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.history-screen .search-bar {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.history-screen .ride-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.history-screen .ride-card {
-    padding: 20px;
-    margin: 10px 0;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.achievements-screen .achievement-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.achievements-screen .achievement-badge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
-.achievements-screen .achievement-badge img {
-    width: 80px;
-    height: auto;
-}
-
-.settings-screen .settings-section {
-    margin: 20px 0;
-}
-
-.settings-screen .settings-section h3 {
-    color: teal;
-}
-
-.settings-screen .settings-section p {
-    margin-left: 20px;
-}
-
-.btn {
-    display: block;
-    text-align: center;
-    background-color: teal;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.logout-btn {
-    background-color: red;
+    cursor: pointer;
 }
